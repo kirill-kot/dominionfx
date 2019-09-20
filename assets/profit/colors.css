@@ -1,0 +1,31 @@
+h2{color:#9B4F40;}
+h3{color:#9B4F40;}
+
+input.err, .err input{border-color:#9B4F40;}
+span.required{color:#D66743;}
+
+footer .footer .title{color:#D66743;}
+footer .footer .title a{color:#D66743;}
+
+.content-wrapper ul li:before{background:#9B4F40;}
+.left-menu ul li.selected{background: #9B4F40;  color: #FFFFFF;}
+.wripper_header_user .content_header_user .mail_header_user{color:#9B4F40;}
+.top-menu ul.top-menu-spisok li ul li:hover a {background: #3C3C3B; color: #8CC63F;}
+
+.withdrawal .withdrawal-deposit-variant .top-withdrawal-deposit{border-bottom-color:#9B4F40;}
+.withdrawal .withdrawal-deposit-variant .top-withdrawal-deposit .item a{color:#3C3C3B;background:#F6F6F6;}
+.withdrawal .withdrawal-deposit-variant .top-withdrawal-deposit .item a.active{color:#FFFFFF;background:#9B4F40;}
+.withdrawal .withdrawal-deposit-variant .top-withdrawal-deposit .note{color:#C6C6C6;}
+
+.forex-details .forex-filter{background:#EDEDED;}
+.forex-details .forex-filter .item a{color:#1D71B8;}
+.forex-details .forex-filter .item a.active{color:#FFFFFF;background:#9B4F40;}
+.metals-table table tbody tr:nth-child(2n+2),
+.forex-table table tbody tr:nth-child(2n+2){background:#F6F6F6;}
+.metals-table table tbody tr:hover,
+.forex-table table tbody tr:hover{background:#31A1B3;}
+
+
+.main-offer .item.green h2{color: #8CC63F;}
+.main-offer .item.red h2{color: #B83526;}
+.main-offer .item.orange h2{color: #F16122;}

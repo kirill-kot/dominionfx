@@ -1,0 +1,39 @@
+.owl-dots{
+	position: absolute;
+	bottom: 15px;
+	right: 45px;
+}
+.owl-dot {
+	display: inline-block;
+	height: 18px;
+    width: 18px;
+    margin-right: 5px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    background-color: #31A1B3;
+}
+.owl-dot:last-child{
+	margin-right: 0;
+}
+.owl-dot:hover {
+    background-color: #238595;
+}
+.owl-dot.active {
+    background-color: #E49D18;
+}
+.owl-dot.active:hover {
+    background-color: #D39013;
+}
+
+@media screen and (max-width: 768px) { 
+	
+	.owl-dots {
+		position: relative;
+		top: -25px;
+		right: 0;
+		left: 0;
+		bottom: 0;
+		text-align: center;
+	}
+	
+}

@@ -1,0 +1,156 @@
+.item-container {
+    display: block;
+}
+.advance-trend .item-wrap {
+/* 	padding: 0 15px; */
+    margin: 0 0 18px 0;
+
+}
+.advance-trend .item-wrap .item-img-row {
+    width: 60px;
+    height: 60px;
+    display: table-cell;
+    vertical-align: middle;
+    padding: 0 15px 0 0;
+}
+.advance-trend .item-wrap .item-img-row img {
+    width: 100%;
+}
+.advance-trend .item-wrap .item-title, .advance-trend .item-wrap .item-text  {
+    display: table-cell;
+    vertical-align: middle;
+    line-height: 1.3
+}
+.advance-trend .item-wrap .item-text {
+    padding: 5px 15px;
+    border: 2px dashed #ededed;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    background-color: #fafafa;
+    font-family: 'PT Sans narrow', sans-serif;
+    font-size: 16px;
+}
+.advance-trend .item-wrap .item-text:after{
+    content: " ";
+    display: block;
+    clear: both;
+}
+.advance-trend .item-wrap .item-text .btn {
+    display: block;
+    width: auto;
+    float: left;
+}
+.advance-trend .item-wrap a {
+    text-decoration: none;
+    color: #333;
+}
+.advance-trend .item-wrap a:hover {
+    color: #337ab7
+}
+
+.advance-trend .col-2 {
+    display: inline-block;
+}
+.home-news {
+    margin: 0 0 10px 0;
+    padding-right: 35px;
+}
+.home-news h2 a{
+    color: #31A1B3;
+    font-size: 16px;
+}
+.home-news .home-news-date {
+    color: #999;
+    font-style: italic;
+    font-size: 12px;
+    margin-top: 5px;
+}
+.sidebar {
+    padding: 20px;
+    background-color: #ededed;
+}
+.sidebar .white {
+    height: 30px;
+    width: 120%;
+    background: #fff;
+    margin: 0 -20px;
+
+}
+.sidebar .widget {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.sidebar .widget:first-child {
+    padding-top: 0;
+}
+.sidebar .widget:last-child {
+    padding-bottom: 0;
+}
+.sidebar .movie-lesson-slogan, .sidebar2 .movie-lesson-slogan {
+    font-size: 26px;
+    margin-bottom: 30px;
+    font-weight: normal;
+    line-height: 26px;
+}
+.entry-content {
+    padding-right: 40px;
+    margin-top: 20px;
+    font-family: "PT Sans narrow", sans-serif;
+    font-size: 18px;
+}
+.sidebar2 {
+    padding: 20px;
+}
+.sidebar2 .widget img{
+    width:100%;
+}
+.mission ul, .mission ul li {
+    list-style: disc !important;
+    margin-left: 10px;
+}
+.footer-maps.second {
+    margin-top: 20px;
+}
+
+.about-people{
+    display: inline-block;
+    padding-bottom: 20px;
+}
+
+.doc ul li {
+    list-style: none !important;
+}
+.doc ul li:before {
+    font-family: 'FontAwesome';
+    content: "\f15c";
+    font-size: 13px;
+    margin-right: 5px;
+    top: -2px;
+    position: relative;
+}
+/*добавлено*/
+
+.webinar-appointment {
+    margin: 0 0 10px 0;
+    padding-right: 35px;
+}
+
+.webinar-appointment h2 a{
+    color: #31A1B3;
+    font-size: 16px;
+}
+.webinar-appointment .webinar-appointment-date {
+    color: #999;
+    font-style: italic;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+@media screen and (max-width: 768px) {
+    .webinar-appointment, .home-news { padding: 0 15px;}
+}
+
+/*//добавлено*/
+
+

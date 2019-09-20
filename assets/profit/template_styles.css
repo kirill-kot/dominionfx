@@ -1,0 +1,1082 @@
+*{margin:0;padding:0;}
+
+p{margin:10px 0 0;}
+p:first-child{margin-top:0;}
+
+.accounts-types {box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.2);}
+
+.justifyfull {
+    text-align:justify;
+}
+body{font-size:14px;color:#404041;font-family: 'Open Sans', 'sans-serif';}
+body h2{font-size: 21px;}
+table{border-collapse:collapse;border-spacing:0;}
+input,textarea,select{outline:none;font-family: 'Open Sans', 'sans-serif';}
+input[type="text"],input[type="password"],input[type="email"],select,textarea{padding:4px 10px;font-size:14px;border:1px solid #DADADA;
+-webkit-border-radius: 5px;
+-moz-border-radius: 5px;
+border-radius: 5px;
+-webkit-box-shadow: inset 0px 0px 6px 0px rgba(0, 0, 0, 0.2);
+-moz-box-shadow:    inset 0px 0px 6px 0px rgba(0, 0, 0, 0.2);
+box-shadow:         inset 0px 0px 6px 0px rgba(0, 0, 0, 0.2);}
+select{padding:3px 10px;}
+textarea{resize:none;padding:5px;}
+input[type="radio"],label{cursor:pointer;}
+input.err,
+.err input{border-color:#BE1622;}
+span.required{color:#E30613;font-weight:bold;font-size:12px;}
+#cover{min-height:100%;}
+#top-back-hover{display:none;z-index:19;position:absolute;left:0;right:0;height:369px;background-image:url(../../images/top-back-hover.html);background-repeat:repeat-x;}
+.cls{clear: both!important; width:0 !important; list-style: none; float: none!important; border: none!important; background: none!important; width: 0px!important; height: 0px!important; margin: 0!important; padding: 0!important;}
+
+.link-1 a{color:#1D71B8;}
+.link-2 a{font-size:12px;color:#1D71B8;font-weight:600;}
+.link-3 a{font-size:12px;color:#1D71B8;text-decoration:none;}
+.link-4 a{font-size:12px;color:#1D71B8;}
+.link-5 a{font-size:14px;color:#1D71B8;text-decoration:none;font-weight:bold;}
+.button-wrapper{text-align:center;}
+.button{display:inline-block;position:relative;text-align:center;}
+.button input{border:0;cursor:pointer;}
+.button.big a,.button.big input{font-size:23px;padding-left:14px;padding-right:14px;}
+.button.small a,.button.small input{font-size:12px;padding-left:9px;padding-right:9px;}
+.button a,.button input{
+    font-family: 'Open Sans', 'sans-serif';color:#FFFFFF;font-size:14px;text-decoration:none;padding:7px 15px;display:block;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+    -webkit-box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow:    1px 1px 1px 1px rgba(0, 0, 0, 0.1);
+    box-shadow:         1px 1px 1px 1px rgba(0, 0, 0, 0.1);
+}
+/*
+.button:hover{top:1px;}
+.button:hover a,.button:hover input{
+-webkit-box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.3);
+-moz-box-shadow:    0px 1px 0px 0px rgba(0, 0, 0, 0.3);
+box-shadow:         0px 1px 0px 0px rgba(0, 0, 0, 0.3);}*/
+.button:active{top:2px;}
+.button:active a,.button:active input{
+-webkit-box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.3);
+-moz-box-shadow:    0px 0px 0px 0px rgba(0, 0, 0, 0.3);
+box-shadow:         0px 0px 0px 0px rgba(0, 0, 0, 0.3);}
+.button.red a,.button.red input{
+background: #FF4D0E;
+/*background: -moz-linear-gradient(top,  #FF4D0E 0%, #FF3A1D 100%); 
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#FF4D0E), color-stop(100%,#FF3A1D)); 
+background: -webkit-linear-gradient(top,  #FF4D0E 0%,#FF3A1D 100%); 
+background: -o-linear-gradient(top,  #FF4D0E 0%,#FF3A1D 100%); 
+background: -ms-linear-gradient(top,  #FF4D0E 0%,#FF3A1D 100%); 
+background: linear-gradient(top,  #FF4D0E 0%,#FF3A1D 100%); 
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FF4D0E', endColorstr='#FF3A1D',GradientType=0 );*/}
+.button.green a,.button.green input{
+background: #7DC200; 
+/*background: -moz-linear-gradient(top,  #7DC200 0%, #00B40A 100%); 
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#7DC200), color-stop(100%,#00B40A)); 
+background: -webkit-linear-gradient(top,  #7DC200 0%,#00B40A 100%); 
+background: -o-linear-gradient(top,  #7DC200 0%,#00B40A 100%); 
+background: -ms-linear-gradient(top,  #7DC200 0%,#00B40A 100%); 
+background: linear-gradient(top,  #7DC200 0%,#00B40A 100%); 
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7DC200', endColorstr='#00B40A',GradientType=0 );*/}
+
+.button.grey a,.button.grey input{
+    background: #F9F9F9;
+    color: #808080!important;
+}
+
+.button.grey a:hover,.button.grey input:hover{
+    background: #F9F9F9;    
+}
+
+.button.blue a,.button.blue input{
+    background: #1D71B8;    
+}
+
+.button.blue a:hover,.button.blue input:hover{
+    background: #e2e2e2;    
+}
+
+
+.button.green.notactive a,.button.green.notactive input{cursor:default;
+background: #C6C6C6; 
+background: -moz-linear-gradient(top,  #C6C6C6 0%, #878787 100%); 
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#C6C6C6), color-stop(100%,#878787)); 
+background: -webkit-linear-gradient(top,  #C6C6C6 0%,#878787 100%); 
+background: -o-linear-gradient(top,  #C6C6C6 0%,#878787 100%); 
+background: -ms-linear-gradient(top,  #C6C6C6 0%,#878787 100%); 
+background: linear-gradient(top,  #C6C6C6 0%,#878787 100%); 
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#C6C6C6', endColorstr='#878787',GradientType=0 );}
+.button.green.notactive:hover,.button.green.notactive:hover{top:0;}
+.button.green.notactive:active,.button.green.notactive:active{top:0;}
+.button.green.notactive:hover a,.button.green.notactive:hover input{top:0;
+-webkit-box-shadow: 0px 2px 0px 0px rgba(0, 0, 0, 0.3);
+-moz-box-shadow:    0px 2px 0px 0px rgba(0, 0, 0, 0.3);
+box-shadow:         0px 2px 0px 0px rgba(0, 0, 0, 0.3);}
+.button.green.notactive:active a,.button.green.notactive:active input{top:0;
+-webkit-box-shadow: 0px 2px 0px 0px rgba(0, 0, 0, 0.3);
+-moz-box-shadow:    0px 2px 0px 0px rgba(0, 0, 0, 0.3);
+box-shadow:         0px 2px 0px 0px rgba(0, 0, 0, 0.3);}
+.button.grey-button a,
+.button.grey-button input{
+background: #C6C6C6; 
+background: -moz-linear-gradient(top,  #C6C6C6 0%, #878787 100%); 
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#C6C6C6), color-stop(100%,#878787)); 
+background: -webkit-linear-gradient(top,  #C6C6C6 0%,#878787 100%); 
+background: -o-linear-gradient(top,  #C6C6C6 0%,#878787 100%); 
+background: -ms-linear-gradient(top,  #C6C6C6 0%,#878787 100%); 
+background: linear-gradient(top,  #C6C6C6 0%,#878787 100%); 
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#C6C6C6', endColorstr='#878787',GradientType=0 );}
+
+.button.red a,
+.button.red input,
+.button.green a,
+.button.green input,
+.button.grey a,
+.button.grey input,
+.button.blue a,
+.button.blue input,
+.button.transparent a,
+.button.transparent input{
+-moz-transition: background 0.2s 0.02s ease;
+ -o-transition: background 0.2s 0.02s ease;
+ -webkit-transition: background 0.2s 0.02s ease;}
+.button.red a:hover ,
+.button.red input:hover,
+.button.red a:active ,
+.button.red input:active,
+.button.blue a:hover ,
+.button.blue input:hover,
+.button.blue a:active ,
+.button.blue input:active,
+.button.green a:hover ,
+.button.green input:hover,
+.button.green a:active ,
+.button.green input:active,
+.button.transparent a:hover,
+.button.transparent input:hover,
+.button.transparent a:active,
+.button.transparent input:active{
+background: #3C3C3B;}
+.button.transparent a,.button.transparent input{border:1px solid #FFFFFF;padding:6px 15px;}
+.button.transparent a:hover,
+.button.transparent input:hover,
+.button.transparent a:active,
+.button.transparent input:active{border-color:#3C3C3B;}
+
+ul,ol{list-style-position: inside;}
+
+body .btn{
+    -moz-box-shadow: 1px 1px 1px rgba(0,0,0,0.1);/* ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚ÂÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚ÂÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚ÂÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â»ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¹Ã…â€œÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â Firefox */
+    -webkit-box-shadow: 1px 1px 1px rgba(0,0,0,0.1);/* ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚ÂÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚ÂÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚ÂÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â»ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¹Ã…â€œÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â Safari ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚ÂÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¸ Chrome */
+    box-shadow: 1px 1px 1px rgba(0,0,0,0.1);/* ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚ÂÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¦ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¸ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚ÂÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â°ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¹Ã…â€œÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚ÂÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â°ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚ÂÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¼ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚ÂÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚ÂµÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¹Ã…â€œÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã¢â‚¬Â¦Ãƒâ€šÃ‚Â¡ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¹Ã…â€œÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¹Ã…â€œÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¹ ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¹Ã…â€œÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã¢â‚¬Â¦Ãƒâ€šÃ‚Â¡ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚ÂÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚ÂµÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚ÂÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â½ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚ÂÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¸ */
+    color: #FFFFFF;
+    border: none;
+    margin-bottom: 1px;
+    font-size: 13px;
+}
+body .btn-default,body .btn-default:hover,body .btn-default:active,body .btn-default:focus{
+    /*background-color: #F9F9F9;
+    color: #808080; */   
+}
+/*body .btn-success,body .btn-success:hover,body .btn-success:focus,body .btn-success:active{background: #8CC63F; color: #FFFFFF;}
+body .btn-danger,body .btn-danger:active,body .btn-danger:hover,body .btn-danger:focus{background: ; color: #FFFFFF;}*/
+body .btn:active{
+    -moz-box-shadow: inset 0px 0px 2px rgba(0,0,0,0.3); /* ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚ÂÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚ÂÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚ÂÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â»ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¹Ã…â€œÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â Firefox */
+    -webkit-box-shadow: inset 0px 0px 2px rgba(0,0,0,0.3); /* ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚ÂÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚ÂÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚ÂÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â»ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¹Ã…â€œÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â Safari ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚ÂÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¸ Chrome */
+    box-shadow: inset 0px 0px 2px rgba(0,0,0,0.3); /* ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚ÂÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¦ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¸ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚ÂÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â°ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¹Ã…â€œÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚ÂÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â°ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚ÂÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¼ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚ÂÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚ÂµÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¹Ã…â€œÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã¢â‚¬Â¦Ãƒâ€šÃ‚Â¡ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¹Ã…â€œÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¹Ã…â€œÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¹ ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¹Ã…â€œÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã¢â‚¬Â¦Ãƒâ€šÃ‚Â¡ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚ÂÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚ÂµÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚ÂÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â½ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚ÂÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¸ */  
+    margin-top: 1px;  
+    margin-bottom: 0px;
+}
+.mt10{margin-top: 10px;}
+
+
+
+header{padding-bottom: 23px;}
+header .wrapper{}
+header .container{position: relative;}
+header .panel_white_header, header .panel_grey_header{
+    padding-left: 145px; 
+    position: relative;
+    -moz-box-shadow: inset 1px 1px 1px rgba(0,0,0,0.1); /* ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚ÂÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚ÂÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚ÂÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â»ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¹Ã…â€œÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â Firefox */
+    -webkit-box-shadow: inset 1px 1px 1px rgba(0,0,0,0.1); /* ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚ÂÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚ÂÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚ÂÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â»ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¹Ã…â€œÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â Safari ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚ÂÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¸ Chrome */
+    box-shadow: inset 1px 1px 1px rgba(0,0,0,0.1); /* ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚ÂÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¦ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¸ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚ÂÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â°ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¹Ã…â€œÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚ÂÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â°ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚ÂÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¼ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚ÂÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚ÂµÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¹Ã…â€œÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã¢â‚¬Â¦Ãƒâ€šÃ‚Â¡ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¹Ã…â€œÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¹Ã…â€œÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¹ ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¹Ã…â€œÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã¢â‚¬Â¦Ãƒâ€šÃ‚Â¡ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚ÂÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚ÂµÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚ÂÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â½ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚ÂÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¸ */        
+}
+header .logo{position: absolute; left: 0;top: 0; z-index: 200;}
+header .panel_grey_header{background: #F9F9F9;min-height: 80px;}
+header .panel_white_header{background: #FFFFFF; min-height: 60px;}
+body header a.personal{color: #333333; background-image: url(../../images/header/header_lk_button.png); background-repeat: no-repeat; background-position: 21px center; padding-right: 24px; padding-left: 51px;}
+body header a.personal:hover, body header a.personal:active, body header a.personal:focus{background-image: url(../../images/header/header_lk_button.png); background-repeat: no-repeat; background-position: 21px center;}
+body header .openaccount{width: 190px; text-align: center;}
+
+.wrapper-content{padding-bottom: 30px;}
+
+footer{}
+footer .footer_top{background: #404041; padding: 35px 0 21px;}
+footer .fmenu{}
+
+footer .footer_bottom{background: #282828; color: #FFFFFF; padding: 32px 0 21px;}
+footer .footer_bottom .notify{font-size: 11px; color: #808080; padding-top: 6px;}
+footer .footer_bottom .copyright{font-size: 12px;}
+footer .register .btn{width: 249px; margin-bottom: 12px; border-bottom: 1px solid transparent;}
+footer .register .btn:active{margin-bottom: 11px;}
+
+
+
+
+
+
+.social .ico{float:left;width:34px;height:36px;margin-left:14px;background-image:url(../../images/footer/social.html);background-repeat:no-repeat;}
+.social .ico a{display:block;width:34px;height:36px;}
+.social .ico.facebook{margin-left:0;}
+.social .ico.twitter{background-position:-48px 0;}
+.social .ico.youtube{background-position:-96px 0;}
+.social .ico.linkedin{background-position:-144px 0;}
+.social .ico.pinterÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¹Ã…â€œÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â‚¬Å¾Ã‚Â¢st{background-position:-192px 0;}
+.social .ico.instagram{background-position:-240px 0;}
+
+
+
+.main-slider{}
+.main-slider #slider{position:relative;}
+.main-slider #slider .pagination{position: absolute;bottom:0;margin-bottom:-24px;width: 100%;text-align: center;}
+.main-slider #slider .pagination ul{list-style:none;display: inline-block;}
+.main-slider #slider .pagination ul li{float:left;margin-left:11px;}
+.main-slider #slider .pagination ul li:first-child{margin-left:0;}
+.main-slider #slider .pagination ul li a{display:block;width:8px;height:8px;background:#B2B2B2;
+-webkit-border-radius: 4px;
+-moz-border-radius: 4px;
+border-radius: 4px;}
+.main-slider #slider .pagination ul a.active{background:#EB5C55;cursor:default;}
+.main-slider #slider ul.slide{overflow:hidden;max-height:280px;}
+.main-slider #slider ul.slide li{display:none;list-style:none;position:relative;background-repeat:no-repeat;height:280px;}
+.main-slider #slider ul.slide li a{text-decoration: none;}
+.main-slider #slider ul.slide li .button a{color:#FFFFFF;}
+.main-slider #slider ul.slide li:first-child{display:list-item;}
+.main-slider #slider ul.slide li .slide-bg{position:absolute;z-index:1;}
+.main-slider #slider ul.slide li .text-block{position:absolute;left:0;right:0;top:0;bottom:0;z-index:2;text-align: center;}
+.main-slider #slider ul.slide li .text-block .first-slide{padding-left:25px;}
+.main-slider #slider ul.slide li .text-block .first-slide .title{margin-bottom:30px;font-family:Arial, sans-serif;font-size:45px;line-height:41px;color: #D39013;padding-top: 20px;height: 160px;/* background-color: white; */background: opaque;}
+.main-slider #slider ul.slide li .text-block .first-slide .button.red{margin-right:10px;}
+.main-slider #slider ul.slide li .text-block .first-slide .title span{font-weight:600;color:#BE1E2D;}
+.main-slider #slider ul.slide li .text-block .first-slide .title-bottom{font-size:26px;}
+.main-slider #slider ul.slide li .text-block .first-slide .description{line-height:17px;margin-top:14px;margin-bottom:24px;}
+.main-slider #slider .btn{padding: 7px 59px 10px 37px; font-size: 22px;}
+
+
+
+
+.main-offer{margin-bottom:34px;}
+.main-offer .item{height: 241px; width: 376px; padding: 23px 15px 0px; background: url('../../images/main-offer/main-offer-wripper.html') no-repeat top center;}
+.main-offer .item .image{float:left;width:68px;overflow:hidden;margin-right:10px;margin-top:5px;text-align:center;}
+.main-offer .item .description{font-size: 15px; line-height: 20px; height: 113px; overflow: hidden;}
+.main-offer .item h2{font-size: 18px; line-height: 28px;}
+.main-offer .item .center{text-align: center;}
+.main-offer .item .btn{width: 244px; text-align: center;}
+
+.videocourse {background: #EDEDED;padding: 30px 0 40px 0;}
+
+
+.main-bottom{margin-bottom:4px;}
+.main-partnership{float:left;margin-left:21px;width:353px;}
+.main-partnership .main-partnership-wrapper,
+.main-bottom .main-video .main-video-wrapper,
+.main-news-wrapper{min-height:390px;}
+.main-partnership .annotation{line-height:15px;}
+.main-partnership .title{font-size:12px;font-weight:700;margin-top:23px;}
+.main-partnership .item{margin-top:19px;}
+.main-partnership .item .image{text-align:center;float:left;width:41px;overflow:hidden;margin-right:12px;}
+.main-partnership .item .description{float:left;width:300px;font-size:12px;line-height:15px;color:#706F6F;}
+.main-partnership .item .description .name{font-size: 12px;font-weight: 700;color:#1D1D1B;margin:0 0 7px;}
+.main-partnership .button-wrapper{margin-top:15px;text-align:center;}
+.main-bottom .bottom-line{margin-top:30px;}
+
+.main-bottom .main-video{float:left;width:353px;margin-left:20px;}
+.main-bottom .main-video .annotation{line-height:15px;}
+.main-bottom .main-video .item{margin-bottom:30px;position:relative;margin-top:30px;width:353px;height:209px;}
+.main-bottom .main-video .button-wrapper{position:absolute;left:50%;margin-left:-48px;bottom:0;margin-bottom:38px;}
+.main-bottom .main-video .all-videos{float:left;margin-bottom:10px;}
+.main-bottom .main-video .note{float:right;margin-top:3px;font-weight:600;background-image:url(../../images/main-videos/more.html);background-repeat:no-repeat;background-position:right center;margin-right:25px;padding-right:40px;}
+.main-bottom .main-video .note a{color:#C6C6C6;text-decoration:none;}
+/*
+.platform,
+.platform .bottom-line,
+.mission .video  .bottom-line,
+.mission .regulation,
+.mission .regulation .bottom-line,
+.mission .bottom{margin-top:15px;}
+*/
+.about,
+/*.mission,*/
+.about .bottom-line,
+.about-news .parent,
+.about-contact .top,
+.platforms .ait-platform .bottom-line,
+.platform,
+.platform .bottom-line,
+.mission .video  .bottom-line,
+.mission .regulation,
+.mission .regulation .bottom-line,
+.mission .bottom,
+.platforms .terminals,
+.platforms .terminals .bottom-line,
+.platforms .platform-table,
+.mt4-trading .description,
+.mt4-trading .available-product,
+.mt4-trading .available-product .bottom-line,
+.mt4-trading .get-now,
+.mt4-trading .get-now .bottom-line,
+.trading-signals,
+.spreads .bottom-line,
+.spreads .spreads-conditions,
+.products-forex .market,
+.products-forex .description,
+.products-forex .open-account,
+.spot-metals .trade-metals,
+.spot-metals .specifications,
+/*.mt4-windows .description,*/
+.mt4-windows .description .desktop-benefits,
+.product-specification .forex-details,
+.withdrawal .withdraw-how,
+.products .top-block,
+.products .leverage-info,
+.products .open-account,
+/*.mt4-ios .description,*/
+.mt4-ios .mt4-iphone,
+.mt4-ios .desktop-benefits,
+.mt4-ios.linux .note,
+.mt4-ios.linux .linux-instruction,
+.mt4-ios.linux .linux-instruction .image-software,
+.mt4-ios.linux .linux-instruction .note-second,
+.mt4-ios.linux .linux-instruction .bottom-line,
+.mt4-ios.linux .linux-instruction .button,
+.mt4-windows.vps-server .hardware,
+.news-analytics .left-news-analytics .bottom-note,
+.news-analytics .right-news-analytics,
+.news-analytics .right-news-analytics .parent,
+.news-analytics .right-news-analytics .parent .item,
+.news-analytics .right-news-analytics .parent .item .event-calender-wrapper,
+.news-analytics .right-news-analytics .parent .item .event-calender-wrapper .event-calender .more,
+.partnerships .description,
+.partnerships .get-partnership,
+/*.promotions .description,*/
+.promotions .description .item  .bottom-line{margin-top:30px;}
+
+.mt4-windows .description .right .button,
+.spot-metals .trade-metals .left,
+.spot-metals .trade-metals .right,
+.product-specification .left,
+.product-specification .right,
+.mt4-windows .description .right,
+.mt4-ios .mobile-trading .right,
+.mt4-windows .description .left,
+.mt4-ios .mobile-trading .left,
+.mt4-windows.vps-server .hardware .present,
+.mt4-windows.vps-server .vps-request{margin-top:25px;}
+
+
+.about .right-content .who-we .top,
+.mission .video,
+.platform .parent,
+.regulation p,
+.main-partnership .annotation,
+.main-news  .parent,
+.main-bottom .main-video .annotation,
+.mission .bottom .security .description,
+.mt4-trading .get-now .parent,
+.products-forex .market .left,
+.products-forex .market .right,
+.withdrawal .withdraw-how .description,
+.mt4-ios .mt4-iphone .shortdescription,
+.mt4-ios .mobile-trading .left .shortdescription,
+.mt4-ios .mobile-trading .right .shortdescription,
+.mt4-windows .description .right .shortdescription,
+.mt4-windows .description .desktop-benefits .shortdescription,
+.mt4-ios .desktop-benefits .shortdescription,
+.mt4-windows.vps-server .hardware .left-hardware,
+.mt4-windows.vps-server .hardware .right-hardware,
+.news-analytics .main-news-wrapper .parent,
+.news-analytics .right-news-analytics .parent .item .event-calender-wrapper .event-calender{margin-top:10px;}
+
+.about .left-content .locations,
+.left-news .item,
+.about-contact .map .location,
+.about-contact .map .location .image,
+.bottom-contact .parent .item,
+.subscribe,
+.free-practice,
+.mt4-trading .description .right,
+.box-modal,
+.box-modal#authorize .auth-input.text .note-wrapper .second-wrapper,
+.trading-account,
+.products-forex .market .left,
+.left-partnership,
+.products .leverage-info,
+.mt4-ios.linux .note,
+.mt4-windows.vps-server .vps-request,
+.news-analytics .right-news-analytics .parent .item .event-calender-wrapper .event-calender,
+.shadow-block-option{
+-webkit-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.2);
+-moz-box-shadow:    0px 0px 15px 0px rgba(0, 0, 0, 0.2);box-shadow:         0px 0px 15px 0px rgba(0, 0, 0, 0.2);
+background: rgb(255, 255, 255);
+background: -moz-linear-gradient(135deg, rgb(255, 255, 255) 75%, rgb(246, 246, 246) 100%);
+background: -webkit-linear-gradient(135deg, rgb(255, 255, 255) 75%, rgb(246, 246, 246) 100%);
+background: -o-linear-gradient(135deg, rgb(255, 255, 255) 75%, rgb(246, 246, 246) 100%);
+background: -ms-linear-gradient(135deg, rgb(255, 255, 255) 75%, rgb(246, 246, 246) 100%);
+background: linear-gradient(225deg, rgb(255, 255, 255) 75%, rgb(246, 246, 246) 100%);}
+
+.shadow-block-option{padding:20px;}
+
+.main-news{width:353px;float:left;}
+
+.about .left-content{float:left;width:335px;}
+
+.about .left-content .vision .wrapper p{color:#FFFFFF;}
+.about .left-content .vision .wrapper .bottom{margin-top:53px;}
+.about .left-content .vision .wrapper .bottom .note{width:140px;float:left;margin-top:2px;font-weight:600;color:#DAAAA8;}
+.about .left-content .vision .wrapper .bottom .note a{color:#DAAAA8;text-decoration:none;}
+.about .left-content .vision .wrapper .bottom .button{float:right;}
+
+.about .left-content .locations{margin-top:20px;padding:20px 30px;background-image:url(../../images/about/about/map.html);background-repeat:no-repeat;background-position:center;}
+.about .left-content .locations .description{margin-top:20px;}
+.about .left-content .locations .description p{line-height:19px;}
+
+.about .right-content{float:right;width:545px;}
+.about .right-content .who-we .top .image{float:left;margin-right:15px;}
+.about .right-content .who-we .top .about-chief{float:left;margin-top:23px;}
+.about .right-content .who-we .top .about-chief .name{font-size:21px;color:#3C3C3B;}
+.about .right-content .who-we .description{margin-top:10px;}
+.about .partner{margin-top:30px;height:44px;}
+.about .partner img{margin-left:50px;}
+.about .partner img:first-child{margin-left:0;}
+
+.mission .video .youtube{float:left;width:471px;}
+.mission .video .description{float:right;width:400px;}
+
+
+.mission .regulation p{padding:0;}
+
+.mission .bottom{padding-bottom:10px;}
+.mission .bottom .main-partnership .annotation{line-height:19px;}
+.mission .bottom .security{float:left;width:450px;}
+.mission .bottom .security .parent{margin-top:25px;}
+.mission .bottom .security .parent .item{margin-top:20px;}
+.mission .bottom .security .parent .item:first-child{margin-top:0;}
+.mission .bottom .security .parent .item .name{font-size:12px;font-weight:700;}
+.mission .bottom .security .parent .item .shortdescription{margin-top:7px;font-size:12px;line-height:15px;color:#706F6F;}
+
+.mission .bottom .main-partnership{width:410px;float:right;}
+.mission .bottom .main-partnership .main-partnership-wrapper{min-height:300px;}
+
+.subscribe,
+.free-practice,
+.trading-account{margin-bottom:20px;}
+.subscribe h2,
+.free-practice h2,
+.trading-account h2{padding:10px 20px;}
+.subscribe .description,
+.free-practice .description,
+.trading-account .description{line-height:15px;background:#f6f6f6;}
+.subscribe .description{padding:12px 20px;font-size:11px;color:#706f6f;}
+.free-practice .description,
+.trading-account .description{padding:20px;margin-top:10px;}
+.subscribe .subscribe-form,
+.free-practice .free-form,
+.trading-account .account-form{padding: 0px 10px 20px 10px;}
+.free-practice .free-form .button-wrapper .button a,
+.trading-account .account-form .button-wrapper .button a{line-height:15px;}
+.subscribe .subscribe-form .label{margin-top:8px;}
+.subscribe .subscribe-form .label,
+.about-contact .ait-group .description .item .item-input .label,
+.about-contact .ait-group .description .item .item-textarea .label{font-size:12px;font-weight:600;}
+.subscribe .subscribe-form input[type="text"],
+.about-contact .ait-group .description .item .item-input input[type="text"]{margin-top:6px;width:100%;}
+.subscribe .subscribe-form .button-wrapper,
+.free-practice .free-form .button-wrapper,
+.trading-account .account-form .button-wrapper{margin-top:17px;}
+.trading-account .account-form .button-wrapper .button a{padding-left:10px;padding-right:10px;}
+
+.free-practice .image,
+.trading-account .image{width:110px;height:116px;margin:0 auto;overflow:hidden;background-repeat:no-repeat;}
+.free-practice .image{background-image:url(../../images/free-practice.html);}
+.trading-account .image{background-image:url(../../images/trading-account.html);}
+
+.about-contact{}
+.about-contact .top{}
+.about-contact .top .description{width:/*570*/400px;float:left;}
+.about-contact .top .contact_bl{float:right;width:410px;}
+.about-contact .top .contact_bl span{font-weight:bold;}
+.about-contact .top .social{float:right;width:274px;}
+.about-contact .top .social .title{font-weight:600;margin-bottom:10px;}
+
+.about-contact .map{position:relative;margin-top:20px;height:360px;background-image:url(../../images/about-contacts/map-big.html);background-repeat:no-repeat;background-position:115px 0;}
+.about-contact .map .location{position:absolute;background:#FDFDFD;top:49px;left:62px;}
+.about-contact .map .location .wrapper{padding:25px;width:220px;position:relative;}
+.about-contact .map .location .wrapper:after{content:"";position:absolute;width:74px;height:72px;right:0;top:50%;margin-top:-36px;margin-right:-74px;background-image:url(../../images/about-contacts/location-after.html);background-repeat:no-repeat;}
+.about-contact .map .location .image{width:61px;height:40px;}
+.about-contact .map .location .country{font-weight:600;margin-top:23px;}
+.about-contact .map .location .adress{margin-top:6px;}
+
+.about-contact .ait-group{}
+.about-contact .ait-group .parent{margin-top:40px;}
+.about-contact .ait-group .parent .item{float:left;cursor:pointer;position:relative;width:103px;margin:0 61px;}
+.about-contact .ait-group .parent .item .name{text-align:center;}
+
+.about-contact .ait-group .description{}
+.about-contact .ait-group .description .item{padding:35px 50px;background:#EDEDED;margin-top:38px;display:none;}
+.about-contact .ait-group .description .item .item-input{float:left;margin-right:35px;}
+.about-contact .ait-group .description .item .item-input:first-child{margin-left:0;}
+.about-contact .ait-group .description .item .ok{color: green;}
+.about-contact .ait-group .description .item .error{color: red;}
+.about-contact .ait-group .description .item .item-input input,
+.about-contact .ait-group .description .item .item-input select,
+.about-contact .ait-group .description .item .item-textarea textarea{margin-top:6px;}
+.about-contact .ait-group .description .item .item-input select{width:230px;}
+.about-contact .ait-group .description .item .item-textarea textarea{width:750px;height:90px;}
+.about-contact .ait-group .description .item .item-textarea{margin-top:15px;}
+.about-contact .ait-group .description .item .button{float:left;margin-top:13px;}
+.about-contact .ait-group .description .item .note{float:left;font-size:12px;margin-left:22px;margin-top:22px;}
+.about-contact .ait-group .parent .item span.before{margin-bottom:-56px;}
+
+.platforms{}
+.platforms-top{}
+.platforms-top .top{height:204px;background-image:url(../../images/platforms/platform-top.html);background-repeat:no-repeat;padding:0 65px;border-bottom:6px solid #BE1E2D;}
+.platforms-top .top .title{font-size:46px;color:#FFFFFF;display: table-cell;line-height: 54px;width: 590px;height: 204px;vertical-align: middle;}
+.platforms-top .top .title span{font-size:40px;font-weight:300;}
+.platforms-top .top .logo{display:table-cell;width:380px;height:204px;vertical-align:middle;text-align:right;}
+.platforms-top .bottom{text-align:center;padding:45px 65px;}
+.platforms-top .bottom .block{display:inline-block;margin-left:25px;}
+.platforms-top .bottom .block:first-child{margin-left:0;}
+.platforms-top .bottom .system{height:42px;text-align:center;}
+.platforms-top .btn{font-size: 23px; padding-left: 14px; padding-right: 14px;}
+.platforms-top .big{position: relative;}
+/*
+.platforms-top .bottom .system.windows{margin-left:45px;}
+.platforms-top .bottom .system.ios{margin-left:118px;}
+.platforms-top .bottom .system.android{margin-left:125px;}
+*/
+.platforms-top .bottom .system.app-store{/*margin-left:105px;*/margin-top:16px;}
+.platforms-top .bottom .system.google{/*margin-left:125px;*/margin-top:31px;}
+.platforms-top .bottom .button{margin-top:19px;}
+
+.mt10.no-active:before {
+    content: "ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚ÂÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¡ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚ÂÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¦ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¡ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚ÂÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¦ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¾ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚ÂÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚ÂÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¦ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¾";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0,0,0,.8);
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 24px;
+    line-height: 44px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    border-radius: 0px;
+
+}
+
+.platforms .terminals{}
+.platforms .terminals .item{float:left;width:340px;margin-left:40px;}
+.platforms .terminals .item:first-child{margin-left:0;}
+.platforms .terminals .item .note{font-size:12px;font-weight:600;margin-top:5px;}
+.platforms .terminals .item .description,
+.platforms .terminals .item .more{margin-top:15px;}
+
+.platforms .platform-table{}
+.platforms .platform-table table{width:960px;margin:0 auto;}
+.platforms .platform-table table td{width:140px;text-align:center;}
+.platforms .platform-table table td:first-child{width:170px;text-align:left;}
+.platforms .platform-table table tbody td{padding:6px 15px;}
+.platforms .platform-table table thead td{font-size:12px;font-weight:600;padding:18px 15px;}
+.platforms .platform-table table thead td:nth-child(2n+2){background:#F6F6F6;}
+.platforms .platform-table table tbody tr:nth-child(2n+1) td:nth-child(2n+1){background:#F6F6F6;}
+.platforms .platform-table table tbody tr:nth-child(2n+1) td:nth-child(2n+2){background:#EEEEEE;}
+.platforms .platform-table table tbody tr:nth-child(2n+2) td:nth-child(2n+2){background:#F6F6F6;}
+.platforms .platform-table table tbody tr:last-child td{padding: 18px 15px;vertical-align:top;}
+.platforms .platform-table table td span.accept{margin:0 auto;width:18px;height:11px;display:block;background-image:url(../../images/platforms/span-ok.html);background-repeat:no-repeat;}
+.platforms .platform-table table td .button{margin-top:5px;}
+
+.platform .parent .item{float:left;margin-left:40px;}
+.platform .parent .item:first-child{margin-left:0;}
+.platform .parent .item .name{font-weight:700;font-size:12px;}
+.platform .parent .item .image{float:left;margin-right:15px;margin-top:18px;}
+.platform .parent .item .right{float:left;width:190px;margin-top:16px;}
+.platform .parent .item .right .shortdescription{color:#706F6F;line-height:15px;font-size:12px;font-weight:600;}
+
+
+.mt4-trading{}
+.mt4-trading .description{}
+.mt4-trading .description .image,
+.mt4-trading .description .left,
+.mt4-trading .description .right{margin-top:25px;}
+.mt4-trading .description .left{float:left;width:455px;}
+.mt4-trading .description .right{float:right;width:370px;padding:20px;}
+
+.mt4-trading .available-product{}
+.mt4-trading .available-product .note{margin-top:12px;font-size:12px;line-height:15px;font-weight:600;color:#706F6F;}
+.mt4-trading .available-product table{width:100%;margin-top:17px;}
+.mt4-trading .available-product table td{padding:7px 10px;border:1px solid #DADADA;text-align:center;font-size:12px;}
+.mt4-trading .available-product table td:first-child{text-align:left;}
+.mt4-trading .available-product table thead td{background:#EDEDED;font-weight:600;}
+.mt4-trading .available-product .bottom-note{margin-top:5px;font-size:11px;color:#B2B2B2;}
+/*ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚ÂÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¦ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¾ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚ÂÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â±ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¹Ã…â€œÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¦ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚ÂÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚ÂµÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚ÂÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â´ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚ÂÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¸ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚ÂÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â½ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚ÂÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¸ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¹Ã…â€œÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã¢â‚¬Â¦Ãƒâ€šÃ‚Â¡ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¹Ã…â€œÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¦ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â‚¬Å¾Ã‚Â¢ ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¹Ã…â€œÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚ÂÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚ÂºÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚ÂÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¾ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚ÂÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¼ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚ÂÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¿ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚ÂÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¾ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚ÂÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â½ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚ÂÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚ÂµÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚ÂÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â½ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¹Ã…â€œÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã¢â‚¬Â¦Ãƒâ€šÃ‚Â¡ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚ÂÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¾ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚ÂÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¼ news-list - platform*/
+.mt4-trading .get-now{}
+.mt4-trading .get-now .parent{}
+.mt4-trading .get-now .parent .item{float:left;margin-left:40px;}
+.mt4-trading .get-now .parent .item:first-child{margin-left:0;}
+.mt4-trading .get-now .parent .item .name{font-weight:700;font-size:12px;}
+.mt4-trading .get-now .parent .item .image{float:left;margin-right:15px;margin-top:18px;}
+.mt4-trading .get-now .parent .item .right{float:left;width:190px;margin-top:16px;}
+.mt4-trading .get-now .parent .item .right .shortdescription{height:106px;overflow:hidden;color:#706F6F;line-height:15px;font-size:12px;font-weight:600;}
+.mt4-trading .get-now .parent .item .right .button{margin-top:5px;}
+.mt4-trading .get-now .parent .item .right .link-2{margin-top:12px;}
+.mt4-trading .get-now .parent .item .right .button-wrapper{text-align:left;}
+
+.mt4-trading .platform-description{margin-top:25px;}
+.mt4-trading .platform-description p{font-size:11px;line-height:11px;color:#706F6F;padding:0;}
+
+/*-------*/
+
+.mt4-windows{}
+.mt4-windows .description{}
+.mt4-windows .description .image{position:relative;}
+.mt4-windows .description .image .shortdescription{position:absolute;bottom:15px;left:0;right:0;text-align:center;}
+.mt4-windows .description .image .shortdescription p{font-size:12px;line-height:15px;width:420px;margin-left:auto;margin-right:auto;}
+.mt4-windows .description .left,
+.mt4-ios .mobile-trading .left,
+.mt4-ios .mt4-iphone .left{float:left;width:570px;}
+.mt4-windows .description .left .advantages .advantages-left{width:285px;float:left;}
+.mt4-windows .description .left .advantages .advantages-right{width:240px;float:right;}
+
+.mt4-windows .description .right,
+.mt4-ios .mobile-trading .right{float:right;width:300px;}
+.mt4-windows .description .right .shortdescription ul li,
+.execution .trades-executed .description ul li,
+.spreads .tight-spreads .description ul li,
+.margin-leverage .leverage-offering .description ul li,
+.overnight-positions .rollover .description ul li,
+.trading-hours .trading-access .description ul li,
+.products-forex .market .left ul li,
+.mt4-ios .mobile-trading .right .shortdescription ul li,
+.trading-conditions .parent .item .center ul li,
+.account-types .description .top-description ul li{padding-left:5px;}
+.mt4-windows .description .right .shortdescription ul li:before,
+.execution .trades-executed .description ul li:before,
+.spreads .tight-spreads .description ul li:before,
+.margin-leverage .leverage-offering .description ul li:before,
+.overnight-positions .rollover .description ul li:before,
+.trading-hours .trading-access .description ul li:before,
+.products-forex .market .left ul li:before,
+.mt4-ios .mobile-trading .right .shortdescription ul li:before,
+.trading-conditions .parent .item .center ul li:before,
+.account-types .description .top-description ul li:before{top:0;background:none;background-image:url(../../images/ul-check.html);width:13px;height:10px;}
+.mt4-windows .description .right .button{margin-left:20px;}
+
+.mt4-windows .description .desktop-benefits .shortdescription div,
+.mt4-ios .desktop-benefits .shortdescription div{float:left;width:273px;margin-left:40px;}
+.mt4-windows .description .desktop-benefits .shortdescription div:first-child,
+.mt4-ios .desktop-benefits .shortdescription div:first-child{margin-left:0;}
+
+.mt4-windows.vps-server{}
+.mt4-windows.vps-server .description .image .parent{position:absolute;top:25px;padding:0 41px;}
+.mt4-windows.vps-server .description .image .parent .item{float:left;width:160px;margin-left:58px;}
+.mt4-windows.vps-server .description .image .parent .item:first-child{margin-left:0;}
+.mt4-windows.vps-server .description .image .parent .item .item-image{margin:0 auto;width:128px;height:128px;overflow:hidden;}
+.mt4-windows.vps-server .description .image .parent .item .name{text-align:center;font-size:17px;font-weight:600;color:#FFFFFF;margin-top:10px;}
+.mt4-windows.vps-server .description .image .button{top:224px;left:45px;position:absolute;}
+.mt4-windows.vps-server .description .image .shortdescription{width:570px;position:absolute;left:60px;bottom:20px;color:#FFFFFF;}
+.mt4-windows.vps-server .description .image .shortdescription p{width:auto;text-align:left;}
+.mt4-windows.vps-server .description .left .note{font-size:12px;color:#706F6F;line-height:15px;}
+.mt4-windows.vps-server .hardware{}
+.mt4-windows.vps-server .hardware .left-hardware{float:left;width:440px;}
+.mt4-windows.vps-server .hardware .left-hardware table{width:100%;}
+.mt4-windows.vps-server .hardware .left-hardware table tr:nth-child(2n+1) td{background:#EDEDED;}
+.mt4-windows.vps-server .hardware .left-hardware table td{padding:0 10px;}
+.mt4-windows.vps-server .hardware .right-hardware{float:right;width:420px;}
+.mt4-windows.vps-server .hardware .right-hardware p{font-size:12px;line-height:18px;color:#878787;}
+.mt4-windows.vps-server .hardware .present{font-weight:bold;color:#C6C6C6;}
+.mt4-windows.vps-server .vps-terms{margin-top:30px;}
+
+.mt4-windows.vps-server .vps-request{padding:20px;}
+.mt4-windows.vps-server .vps-request .label{margin-top: 8px;font-size: 12px;font-weight: bold;}
+.mt4-windows.vps-server .vps-request input{margin-top: 8px;width:390px;}
+.mt4-windows.vps-server .vps-request .button{margin-top:25px;}
+.mt4-windows.vps-server .vps-request .button input{margin-top:0;width:auto;}
+
+.mt4-ios .mt4-iphone .right{float:right;width:277px;margin-top:40px;}
+.mt4-ios .mt4-iphone .right .button{margin-top:30px;}
+.mt4-ios .description .image {position:relative;}
+.mt4-ios .description .image .app-store,
+.mt4-ios .description .image .google{position:absolute;top:240px;left:90px;}
+.mt4-ios .description .image .google{left:40px;}
+.mt4-ios .description .image .google,
+.mt4-ios .description .image .app-store{padding:10px;border:1px solid rgba(255,255,255,0.2);
+-webkit-border-radius: 7px;
+-moz-border-radius: 7px;
+border-radius: 7px;
+background: -moz-linear-gradient(top,  rgba(255,255,255,0.3) 0%, rgba(255,255,255,0.1) 90%, rgba(255,255,255,0.2) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,0.3)), color-stop(90%,rgba(255,255,255,0.1)), color-stop(100%,rgba(255,255,255,0.2))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  rgba(255,255,255,0.3) 0%,rgba(255,255,255,0.1) 90%,rgba(255,255,255,0.2) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  rgba(255,255,255,0.3) 0%,rgba(255,255,255,0.1) 90%,rgba(255,255,255,0.2) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  rgba(255,255,255,0.3) 0%,rgba(255,255,255,0.1) 90%,rgba(255,255,255,0.2) 100%); /* IE10+ */
+background: linear-gradient(to bottom,  rgba(255,255,255,0.3) 0%,rgba(255,255,255,0.1) 90%,rgba(255,255,255,0.2) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4dffffff', endColorstr='#33ffffff',GradientType=0 ); /* IE6-9 */}
+.mt4-ios .description .image .google img,
+.mt4-ios .description .image .app-store img{display:block;}
+.mt4-ios .description .image .button-absolute{position:absolute;top:155px;left:40px;}
+.mt4-ios .description .image .shortdescription{position:absolute;width:220px;top:240px;left:150px;}
+.mt4-ios .description .image .shortdescription p{font-size:12px;line-height:15px;}
+
+.mt4-ios.linux .mobile-trading .right{margin-top:65px;width:290px;}
+.mt4-ios.linux .mobile-trading .right div{margin-top:30px;}
+.mt4-ios.linux .mobile-trading .right div:first-child{margin-top:0;}
+.mt4-ios.linux .note{padding:20px;}
+.mt4-ios.linux .linux-instruction .note-second:first-child{margin-top:0;}
+.mt4-ios.linux .linux-instruction .note-third{margin-top:30px;padding:6px 30px;font-family:'Courier', 'sans-serif';font-size:15px;color:#FFFFFF;background:#575756;}
+.mt4-ios.linux .linux-instruction .note-third.indent{margin-top:10px;}
+.mt4-ios.linux .linux-instruction .note-second.indent{margin-top:10px;}
+
+.mt4-ios.linux.macos .description .mobile-trading .right.indent{margin-top:35px;}
+.mt4-ios.linux.macos .description .mobile-trading .bottom-line{margin-top:20px;}
+
+.trading-signals .description{margin-top:15px;}
+.trading-signals .top-signals{margin-top:23px;}
+.trading-signals .top-signals .top-title{font-weight:bold;}
+.trading-signals .top-signals .parent{margin-top:15px;border-bottom:1px solid #DADADA;padding-bottom:8px;}
+.trading-signals .top-signals .parent .item{padding:9px 0;}
+.trading-signals .top-signals .parent .item:nth-child(2n+2){background:#F6F6F6;}
+.trading-signals .top-signals .parent .item .section{text-align:center;vertical-align:top;padding:0 12px;width:75px;border-left:1px solid #DADADA;display:table-cell;font-size:21px;color:#575756;}
+.trading-signals .top-signals .parent .item .section.image{display:block;float:left;font-size:12px;font-weight:bold;color:#1D1D1B;}
+.trading-signals .top-signals .parent .item .section:first-child{border:none;}
+.trading-signals .top-signals .parent .item .section.growth{color:#BE1E2D;}
+.trading-signals .top-signals .parent .item .section.trader{text-align:left;width:146px;font-size:14px;font-weight:bold;color:#1D71B8;}
+.trading-signals .top-signals .parent .item .section.trader a{}
+.trading-signals .top-signals .parent .item .section .title{font-size:10px;color:#706F6F;font-weight:600;}
+.trading-signals .top-signals .parent .item .right-section{display:block;float:left;margin-top:14px;}
+
+.box-modal{position:relative;}
+.arcticmodal-overlay{opacity:0.8 !important;}
+.box-modal .box-modal_close{cursor:pointer;position:absolute;right:17px;top:17px;width:15px;height:15px;background-image:url(../../images/boxmodal-close.html);}
+
+
+.products-forex .market .left,
+.products .leverage-info{padding:20px;}
+.execution .trades-executed .image,
+.spreads .tight-spreads .image,
+.margin-leverage .leverage-offering .image,
+.overnight-positions .rollover .image,
+.trading-hours .trading-access .image{float:left;margin-top:3px;width:103px;height:103px;}
+.execution .trades-executed .description,
+.spreads .tight-spreads .description,
+.margin-leverage .leverage-offering .description,
+.overnight-positions .rollover .description,
+.trading-hours .trading-access .description{float:right;width:725px;}
+
+
+.trading-conditions .install-adobe{margin-left:95px;}
+.trading-conditions .install-adobe .left{float:left;margin-top:10px;width:530px;}
+.trading-conditions .install-adobe .left p{font-size:12px;font-weight:600;color:#706F6F;}
+.trading-conditions .install-adobe .right{margin-left:10px;float:left;}
+.trading-conditions .install-adobe .right .adobe-image{float: left;width: 47px;height: 47px;background-image: url(../../images/conditions-spreads/adobe.html);background-repeat: no-repeat;}
+.trading-conditions .install-adobe .right .adobe-description{float:left;margin-top: 10px;margin-left: 15px;width: 150px;}
+.trading-conditions .install-adobe .right .adobe-description a{text-decoration:none;}
+
+
+.spreads .spreads-conditions{}
+.spreads .spreads-conditions .image{float:left;margin-top:4px;width:48px;height:62px;background-image:url(../../images/conditions-spreads/spreads-conditions.html);background-repeat:no-repeat;}
+.spreads .spreads-conditions .description{float:left;margin-left:20px;width:535px;}
+.spreads .spreads-conditions .description .title{font-size:12px;font-weight:bold;}
+.spreads .spreads-conditions .description  .button{margin-top:15px;}
+.spreads .spreads-conditions .description .shortdescription{margin-top:15px;font-weight:600;font-size:12px;color:#706F6F;}
+.spreads .spreads-conditions .install-adobe{float:left;margin-left:20px;margin-top:65px;}
+.spreads .spreads-conditions .install-adobe .adobe-image{float:left;width:47px;height:47px;background-image:url(../../images/conditions-spreads/adobe.html);background-repeat:no-repeat;}
+.spreads .spreads-conditions .install-adobe .adobe-description{float:left;margin-top:10px;margin-left:15px;width:150px;}
+.spreads .spreads-conditions .install-adobe .adobe-description a{text-decoration:none;}
+
+.products-forex{}
+.products-forex .market{}
+.products-forex .market .left{float:left;width:360px;}
+.products-forex .market .right{float:right;width:460px;}
+.products-forex .open-account,
+.products .open-account{}
+.products-forex .open-account .item,
+.products .open-account .item{float:left;}
+.products-forex .open-account .item{margin-left:35px;}
+.products .open-account .item{margin-left:70px;}
+.products-forex .open-account .item:first-child,
+.products .open-account .item:first-child{margin-left:0;}
+.products-forex .open-account .item .image,
+.products .open-account .item .image,
+.partnerships .get-partnership .item .image{float:left;margin-top:5px;width:60px;height:63px;overflow:hidden;}
+.products-forex .open-account .item .open-account-description,
+.products .open-account .item .open-account-description,
+.partnerships .get-partnership .item .get-description{float:left;margin-left:10px;}
+.products-forex .open-account .item .open-account-description{width:345px;}
+.products .open-account .item .open-account-description{width:345px;}
+.partnerships .get-partnership .item .get-description{width:830px;}
+.products-forex .open-account .item .open-account-description .name,
+.products .open-account .item .open-account-description .name,
+.partnerships .get-partnership .item .get-description .name{font-size:12px;font-weight:bold;}
+.products-forex .open-account .item .open-account-description .shortdescription,
+.products .open-account .item .open-account-description .shortdescription,
+.partnerships .get-partnership .item .get-description .shortdescription{margin-top:12px;font-size:12px;font-weight:600;line-height:15px;color:#706F6F;}
+.products-forex .open-account .item .button,
+.products .open-account .item .button,
+.partnerships .get-partnership .item .button{margin-top:12px;}
+
+.execution .execution-description p,
+.spreads .spreads-description p,
+.margin-leverage .leverage-description p,
+.overnight-positions .overnight-description p,
+.trading-hours .trading-hours-description p,
+.about .right-content .who-we .description p,
+.mission .video .description p,
+.mission .bottom .security .description
+.about .left-content .vision .wrapper p,
+.products-forex .market .right p,
+.products-forex .description p,
+.spot-metals .trade-metals .left p,
+.spot-metals .trade-metals .right p,
+.product-specification .left p,
+.product-specification .right p{text-align:justify;}
+
+.spot-metals{}
+.spot-metals .trade-metals{}
+.spot-metals .trade-metals .left{float:left;width:420px;}
+.spot-metals .trade-metals .right{float:right;width:420px;}
+.forex-table{margin-top:20px;}
+.metals-table table tbody td:first-child,
+.forex-table table tbody td:first-child{width:120px;/* text-align:left; */}
+
+.metals-table table td:nth-child(3),
+.forex-table table td:nth-child(2){width:80px;}
+.forex-table table td:nth-child(2){padding:5px 15px;}
+.forex-table table thead tr:nth-child(2) td{width:50px;}
+.metals-table table td:nth-child(4),
+.metals-table table td:nth-child(5){width:50px;}
+.metals-table table td:nth-child(6),
+.metals-table table td:nth-child(7),
+.metals-table table td:nth-child(8),
+.forex-table table td:nth-child(5),
+.forex-table table td:nth-child(6){width:125px;}
+.metals-table table thead td:nth-child(2){padding:5px 45px;}
+.forex-table table td:nth-child(4),
+.forex-table table td:nth-child(5){padding:5px 20px;}
+.forex-table table tbody td:first-child{color:#706F6F;line-height:15px;}
+
+.forex-table table td:nth-child{}
+
+.metals-table table,
+.forex-table table{width:100%;}
+.metals-table table td,
+.forex-table table td{font-size:12px;}
+.metals-table table td p,
+.forex-table table td p{margin:0;font-size:12px;}
+.metals-table table td p.table-bold,
+.forex-table table td p.table-bold{font-weight:bold;color:#1D1D1B;}
+.metals-table table thead,
+.forex-table table thead{}
+.forex-table table thead tr td{text-align:center;font-size:12px;font-weight:bold;background: #31A1B3;padding:5px;color: white;}
+.metals-table table tbody tr,
+.forex-table table tbody tr{border:1px solid #DADADA;}
+.metals-table table thead,
+.forex-table table thead{border: 1px solid #C1C1C1;}
+.metals-table table thead tr td.grey-thead{font-weight: normal;padding:5px;}
+.forex-table table thead tr td.grey-thead{font-weight: normal;}
+.metals-table table thead tr td.darkgrey-thead{font-weight: normal;}
+.forex-table table thead tr td.darkgrey-thead{font-weight: normal;}
+.metals-table table tbody tr,
+.forex-table table tbody tr{cursor:pointer;}
+.metals-table table tbody td,
+.forex-table table tbody td{padding:5px;}
+.metals-table table tbody td.link-3{line-height:13px;}
+.metals-table table td,
+.forex-table table td{text-align:center;vertical-align:top;}
+
+
+.forex-details .forex-filter{background:#EDEDED;}
+.forex-details .forex-filter .item a{color:#1D71B8;}
+.forex-details .forex-filter .item a.active{color:#FFFFFF;background:#9B4F40;}
+.metals-table table tbody tr:nth-child(2n+2),
+.forex-table table tbody tr:nth-child(2n+2){background:#F6F6F6;}
+.metals-table table tbody tr:hover,
+.forex-table table tbody tr:hover{background:#31A1B3;}
+
+.metals-table table tbody tr:hover td,
+.metals-table table tbody tr:hover td a,
+.forex-table table tbody tr:hover td,
+.forex-table table tbody tr:hover td a,
+.metals-table table tr:hover td p.table-bold, 
+.forex-table table tr:hover td p.table-bold{color:#FFFFFF!important;}
+
+.metals-table table tr td.link-3{color:#1D71B8;}
+
+.spot-metals .specifications .note,
+.product-specification .forex-details .note,
+.account-types .description .account-table .table-note{margin-top:10px;}
+.spot-metals .specifications .note p,
+.product-specification .forex-details .note p,
+.account-types .description .account-table .table-note p{margin:0;font-size:11px;color:#B2B2B2;}
+.spot-metals .specifications .note-information,
+.product-specification .forex-details .note-information{margin-top:20px;padding-left:25px;background-image:url(../../images/product-spotmetals/note-info.html);background-repeat:no-repeat;}
+.spot-metals .specifications .note-information p,
+.product-specification .forex-details .note-information p{font-size:12px;line-height:15px;}
+
+.box-modal#spot-metals{}
+.box-modal#spot-metals .parent,
+.box-modal#forex-detail .parent{padding:20px 30px;}
+.box-modal#spot-metals .parent .row,
+.box-modal#forex-detail .parent .row{margin-top:12px;}
+.box-modal#spot-metals .parent .row:first-child,
+.box-modal#forex-detail .parent .row:first-child{margin-top:0;}
+.box-modal#spot-metals .parent .row p,
+.box-modal#forex-detail .parent .row p{margin:0;font-size:12px;color:#878787;line-height:13px;}
+.box-modal#spot-metals .parent .row .left,
+.box-modal#forex-detail .parent .row .left{float:left;width:220px;}
+.box-modal#spot-metals .parent .row .right,
+.box-modal#forex-detail .parent .row .right{float:right;width:310px;}
+.box-modal#spot-metals .parent .row .left p:first-child,
+.box-modal#spot-metals .parent .row .right p:first-child,
+.box-modal#forex-detail .parent .row .left p:first-child,
+.box-modal#forex-detail .parent .row .right p:first-child{font-weight:bold;color:#1D1D1B;}
+.box-modal#spot-metals .title,
+.box-modal#forex-detail .title{font-size: 14px;font-weight: bold;color: #BE1622;padding: 15px 20px;}
+.box-modal#spot-metals .title2,
+.box-modal#forex-detail .title2{font-size: 12px;font-weight: bold;color: #1D1D1B;background: #EDEDED;padding: 6px 20px;}
+.box-modal#spot-metals .note,
+.box-modal#forex-detail .note{background:#EDEDED;padding:6px 0;margin-top:10px;}
+.box-modal#spot-metals .note p,
+.box-modal#forex-detail .note p{color:#878787;font-size:12px;text-align:center;}
+
+
+
+.product-specification{}
+.product-specification .left{float:left;width:420px;}
+.product-specification .right{float:right;width:420px;}
+
+.product-specification .forex-details{}
+.product-specification .forex-details .forex-filter{margin-top:15px;display:table;}
+.product-specification .forex-details .forex-filter .item{float:left;}
+.product-specification .forex-details .forex-filter .item a{padding:2px 8px;font-size:12px;font-weight:bold;text-decoration:none;display:block;}
+
+.withdrawal{}
+.withdrawal .withdrawal-deposit-variant{margin-top:20px;}
+.withdrawal .withdrawal-deposit-variant .top-withdrawal-deposit{border-bottom:5px solid;}
+.withdrawal .withdrawal-deposit-variant .top-withdrawal-deposit .item{float:left;margin-left:5px;}
+.withdrawal .withdrawal-deposit-variant .top-withdrawal-deposit .item:first-child{margin-left:0;}
+.withdrawal .withdrawal-deposit-variant .top-withdrawal-deposit .item a{display:block;padding:6px 16px;text-decoration:none;font-weight:bold;}
+.withdrawal .withdrawal-deposit-variant .top-withdrawal-deposit .note{margin-top:0;padding:6px 0;float:right;font-weight:bold;}
+
+.withdrawal .withdrawal-deposit-variant div.wrapper_withdrawal{display:none;}
+.withdrawal .withdrawal-deposit-variant table{width:100%;}
+.withdrawal .withdrawal-deposit-variant  table td:nth-child(1){width:90px;}
+.withdrawal .withdrawal-deposit-variant  table td:nth-child(2){width:210px;}
+.withdrawal .withdrawal-deposit-variant  table td:nth-child(3){width:110px;}
+.withdrawal .withdrawal-deposit-variant  table td:nth-child(4){width:170px;}
+.withdrawal .withdrawal-deposit-variant  table td:nth-child(5){width:75px;}
+.withdrawal .withdrawal-deposit-variant  table td:nth-child(6){width:130px;}
+.withdrawal .withdrawal-deposit-variant  table tbody td:first-child{text-align:center;}
+.withdrawal .withdrawal-deposit-variant  table tbody tr:nth-child(2n+1) td{background:#EDEDED;}
+.withdrawal .withdrawal-deposit-variant  table td{vertical-align:top;padding:10px 10px;font-size:12px;}
+.withdrawal .withdrawal-deposit-variant  table thead td{font-weight:bold;background:#EDEDED;}
+.withdrawal .withdrawal-deposit-variant  table tr{border:1px solid #DADADA;}
+
+.withdrawal .withdrawal-deposit-variant  table tbody td{line-height:15px; width: 100px;}
+.currency_td{width: 20px !important;}
+.withdrawal .withdrawal-deposit-variant  table tbody td.table-title{text-align:left;background:#DADADA !important;font-size:14px;font-weight:bold;}
+.withdrawal .withdrawal-deposit-variant  table td .more{margin-left:9px;margin-top:3px;}
+
+.withdrawal .withdraw-how h2{float:left;}
+.withdrawal .withdraw-how .priority{margin-top:5px;float:right;font-weight:bold;color:#C6C6C6;}
+
+
+.left-news,
+.left-partnership{margin-top:20px;}
+.left-news .item,
+.left-partnership .item{padding-bottom:20px;}
+.left-news .item .top{height:210px;background-repeat:no-repeat;}
+.left-partnership .item .top{height:267px;background-repeat:no-repeat;}
+.left-news .item .top .title,
+.left-partnership .item .top .title{font-size:21px;line-height:25px;padding:14px 20px;color:#FFFFFF;background-color:rgba(29,29,27,0.78);}
+.left-news .item .bottom,
+.left-partnership .item .bottom{font-size:12px;background:#F6F6F6;padding:20px;}
+.left-news .item .bottom{margin-top:8px;}
+.left-news .item .bottom .description,
+.left-partnership .item .bottom .description{line-height:15px;font-weight:600;}
+.left-news .item .bottom .date{margin-top:8px;line-height:15px;color:#878787;}
+.left-news .item .bottom .more{margin-top:10px;}
+.left-news .item .button-wrapper,
+.left-partnership .item .button-wrapper{margin-top:20px;}
+
+.products{}
+.products .top-block{}
+.products .top-block .left{float:left;width:415px;}
+.products .top-block .left .title .image,
+.products .top-block .right .title .image{display:table-cell;height:75px;background-repeat:no-repeat;background-position:center;}
+.products .top-block .left .title .image{width:47px;background-image:url(../../images/product/product-title-1.html);}
+.products .top-block .right .title .image{width:77px;background-image:url(../../images/product/product-title-2.html);}
+.products .top-block .left .title h2,
+.products .top-block .right .title h2{display:table-cell;vertical-align:middle;padding-left:20px;}
+.products .top-block .left .description,
+.products .top-block .left .link-2,
+.products .top-block .right .description,
+.products .top-block .right .link-2{margin-top:12px;}
+.products .top-block .right{float:right;width:415px;}
+
+.news-analytics .main-news-wrapper{min-height:0px;}
+.news-analytics .left-news-analytics{width:440px;float:left;}
+.news-analytics .right-news-analytics{float:right;width:350px;margin-right:40px;}
+.news-analytics .right-news-analytics .parent{}
+.news-analytics .right-news-analytics .parent .item:first-child{margin-top:0;}
+.news-analytics .right-news-analytics .parent .item .date{font-size:12px;font-weight:bold;}
+.news-analytics .right-news-analytics .parent .item .date span{color:#BE1622;}
+.news-analytics .right-news-analytics .parent .item .events{font-size:27px;color:#575756;margin-top:5px;}
+.news-analytics .right-news-analytics .parent .item .event-calender-wrapper{}
+.news-analytics .right-news-analytics .parent .item .event-calender-wrapper .title{font-size:12px;color:#706F6F;}
+.news-analytics .right-news-analytics .parent .item .event-calender-wrapper .event-calender{padding:20px;}
+.news-analytics .right-news-analytics .parent .item .event-calender-wrapper .event-calender .time{font-size:12px;color:#706F6F;margin-bottom:10px;}
+.news-analytics .right-news-analytics .parent .item .event-calender-wrapper .event-calender .time span{color:#BE1622;font-weight:bold;}
+.news-analytics .right-news-analytics .parent .item .event-calender-wrapper .event-calender .currency{float:left;margin-right:40px;}
+.news-analytics .right-news-analytics .parent .item .event-calender-wrapper .event-calender .currency .image{float:left;margin-right:8px;}
+.news-analytics .right-news-analytics .parent .item .event-calender-wrapper .event-calender .currency .currency-name{float:left;font-size:12px;color:#706F6F;}
+.news-analytics .right-news-analytics .parent .item .event-calender-wrapper .event-calender .volume{float:left;font-size:12px;color:#706F6F;}
+.news-analytics .right-news-analytics .parent .item .event-calender-wrapper .event-calender .volume span{font-weight:bold;color:#BE1622;}
+.news-analytics .right-news-analytics .parent .item .event-calender-wrapper .event-calender .name{font-size:12px;font-weight:bold;margin-top:30px;}
+.news-analytics .right-news-analytics .parent .item .event-calender-wrapper .event-calender .description{margin-top:10px;font-size:12px;line-height:15px;color:#706F6F;}
+.news-analytics .right-news-analytics .parent .item .calendar{margin-top:15px;}
+
+
+.account-types .description .account-table{margin-top:20px;position:relative;}
+.account-types .description .account-table table{width:100%;}
+.account-types .description .account-table table td{vertical-align:top;text-align:center;font-size:12px;width:190px;padding:5px 10px;border:1px solid #DADADA;}
+.account-types .description .account-table table td:first-child{width:240px;text-align:left;}
+.account-types .description .account-table table thead td{padding:10px;font-weight:bold;background:#EDEDED;}
+.account-types .description .account-table table td .button-wrapper{padding:8px 10px 10px;}
+.account-types a[name=table]{display:block;height:50px;width:1px;position:absolute;top:-50px;}
+
+
+.note.risking{padding:25px 30px 15px;margin-top:24px;
+-webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+-moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);}
+.note.risking .title{font-weight:600;margin-top:20px;}
+.note.risking .contact{float:left;width:230px;}
+.note.risking .risk{float:left;margin-left:20px;width:370px;}
+
+.wripper_header_user{}
+.wripper_header_user .img_header_user{display:table-cell;vertical-align:middle;padding-right:15px;width:53px;height:53px;}
+.wripper_header_user .img_header_user svg{display:block;}
+.wripper_header_user .content_header_user{display:table-cell;vertical-align:middle;height:53px;}
+.wripper_header_user .content_header_user .name_header_user{font-size:21px;margin-bottom:-3px;}
+.wripper_header_user .content_header_user .mail_header_user{font-size:18px;}
+
+.left-block .subscribe h2{margin-bottom:0;}
+.about-contact .top{margin-bottom:30px;}
+.about-contact .online_chat_time.button{float:none !important;margin-top:0 !important;}
+.about-contact .chat_cont_left{float: left; margin: 0 15px 0px 0; width: 660px; display: block;}
+.trading-conditions .parent .item .right{text-transform:uppercase;}
+.trading-conditions .parent .item .right .note{text-transform:none;}
+.mt4-ios .desktop-benefits .shortdescription ul li ul{margin-top:30px;display:none;}
+.justifyright {
+    text-align:right;
+}

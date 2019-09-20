@@ -1,0 +1,45 @@
+.top-menu {
+padding-left: 131px;    
+position:relative;z-index:20;
+/*background: #E6E6E6; 
+background: -moz-linear-gradient(top,  #E6E6E6 0%, #D7D7D7 100%); 
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#E6E6E6), color-stop(100%,#D7D7D7));
+background: -webkit-linear-gradient(top,  #E6E6E6 0%,#D7D7D7 100%);
+background: -o-linear-gradient(top,  #E6E6E6 0%,#D7D7D7 100%); 
+background: -ms-linear-gradient(top,  #E6E6E6 0%,#D7D7D7 100%);
+background: linear-gradient(top,  #E6E6E6 0%,#D7D7D7 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#E6E6E6', endColorstr='#D7D7D7',GradientType=0 );
+*/
+}
+
+.top-menu.fixed{position:fixed;top:0;z-index:100;}
+#top-back-hover.fixed{position:fixed;top:0;z-index:99;}
+
+.top-menu ul.top-menu-spisok{padding: 0px; margin: 0;width: 100%;}
+.top-menu ul.top-menu-spisok>li{text-align:center;white-space:nowrap;list-style:none;float:left;position:relative;font-family: 'Open Sans', 'sans-serif';color:#1D1D1B;width: 20%;}
+.top-menu ul.top-menu-spisok>li.level-1:hover:before{content:"";z-index:11;position:absolute;left:50%;margin-left:-8px;bottom:-8px;width:16px;height:8px;background-image:url(images/top-menu-before-black.html);background-repeat:no-repeat;}
+.top-menu ul.top-menu-spisok li a{display:block;padding:21px 0px;text-decoration:none;font-size:14px;color:#1D1D1B;}
+.top-menu ul.top-menu-spisok li.selected>a, .top-menu ul.top-menu-spisok li.selected span{display:block;background:#3C3C3B;padding: 21px 0px; /*color:#FFFFFF;*/ color: #FFF;}
+.top-menu ul.top-menu-spisok li.selected .selected>a{padding:5px 20px;}
+.top-menu ul.top-menu-spisok li ul{display:none;position:absolute;left:-2px;top:auto;z-index:10;background:#EDEDED;}
+.top-menu ul.top-menu-spisok li ul li{list-style:none;white-space: nowrap;text-align:left;}
+
+.top-menu ul.top-menu-spisok li ul{padding:20px 0;min-width:188px;border:2px solid #D3D3D2;border-top:none;}
+.top-menu ul.top-menu-spisok li ul li a{padding:5px 20px;}
+.top-menu ul.top-menu-spisok li ul li.selected a{background:#3C3C3B;color:#FFFFFF;}
+.top-menu ul.top-menu-spisok li ul li:hover a{background:#f5f5f5;color:#FFFFFF;}
+.top-menu ul.top-menu-spisok li ul li.selected:hover a{background:#f5f5f5;color:#FFFFFF;}
+
+
+
+
+.top-menu ul.top-menu-spisok li:hover ul{display:block;}
+.top-menu ul.top-menu-spisok>li:hover,
+.top-menu ul.top-menu-spisok>li:hover>a,
+.top-menu ul.top-menu-spisok>li:hover>span{background: #f5f5f5;/*color:#FFFFFF;*/color: #31A1B3;}
+
+.top-menu ul.top-menu-spisok li ul li ul, .top-menu ul.top-menu-spisok li:hover ul li ul {display:none;position: absolute;left: 99%;top: 50%;z-index:10;background:#EDEDED;}
+.top-menu ul.top-menu-spisok li ul li ul li{list-style:none;white-space: nowrap;text-align:left;}
+.top-menu ul.top-menu-spisok li ul li:hover ul{display:block;}
+
+.top-menu ul.top-menu-spisok li:nth-last-child(2) ul{left:auto;right:-2px;}

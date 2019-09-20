@@ -1,0 +1,12 @@
+body .breadcrumb{border-radius: 0; background: none; padding: 0;}
+.breadcrumb ul{list-style:none;padding:0px 0;height:27px;}
+.breadcrumb ul li{float:left;font-size:11px;}
+.breadcrumb ul li.selected{position:relative;background:#706F6F;color:#FFFFFF;padding:6px 12px 6px 20px;}
+.breadcrumb ul li.selected:after{content:"";width:10px;height:27px;position:absolute;right:0;top:0;margin-right:-10px;background-image:url(../../images/breadcrumb/breadcrumb-after-select.png);background-repeat:no-repeat;}
+.breadcrumb ul li a{position:relative;text-decoration:none;color:#1D1D1B;background:#EDEDED;padding:6px 12px 6px 20px;display:block;}
+.breadcrumb ul li:first-child a{padding:6px 12px;}
+.breadcrumb ul li a:after{content:"";z-index:1;width:12px;height:27px;position:absolute;right:0;top:0;margin-right:-12px;background-image:url(../../images/breadcrumb/breadcrumb-after.png);background-repeat:no-repeat;}
+
+.breadcrumb ul li:hover a{background:#706F6F;color:#FFFFFF; position: relative;}
+.breadcrumb ul li:hover a:after{background-image:url(../../images/breadcrumb/breadcrumb-after-select.png);}
+

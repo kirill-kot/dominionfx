@@ -1,0 +1,6 @@
+.footer-menu{font-size:14px;width:200px;}
+.footer-menu ul li{color:#FFFFFF;list-style:none;line-height:18px;}
+.footer-menu ul li a{color:#FFFFFF;text-decoration:none;}
+.footer-menu ul li a:hover{text-decoration: underline;}
+.footer-menu .title a{color: #8cc63f; font-size: 18px;}
+.footer-menu .title{margin-bottom: 21px;} 

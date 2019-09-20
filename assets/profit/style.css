@@ -1,0 +1,44 @@
+.auth-form{float: right; padding-top: 17px;}
+.auth-form .auth-register{margin-right:2px; float: left; margin-left: 10px;}
+.auth-form .auth-login a, .auth-form .auth-login input{padding:7px; display: block; float: left;}
+.auth-form .auth-login{margin-left: 4px;}
+.auth-form .button{display: block; float: left;}
+.box-modal#authorize{width:600px;padding-bottom:30px;}
+.box-modal#authorize .title{font-size:14px;font-weight:bold;color:#BE1622;padding:15px 20px;}
+.box-modal#authorize .question{font-size:12px;font-weight:bold;color:#1D1D1B;background:#EDEDED;padding:6px 20px;}
+.box-modal#authorize .label{float:left;font-size:12px;color:#878787;margin-left:50px;margin-top:17px;width:150px;}
+.box-modal#authorize .label.radio{margin-left:10px;}
+.box-modal#authorize .auth-input{position:relative;float:left;margin:12px 0 12px 10px;}
+.box-modal#authorize .auth-input.text .note-wrapper{position:absolute;right:0;top:0;}
+.box-modal#authorize .auth-input.text .note-wrapper:hover .second-wrapper{display:block;}
+.box-modal#authorize .auth-input.text .note-wrapper .note-ico{float:right;margin-right:-27px;margin-top:6px;width:17px;height:17px;background-image:url(assets/images/note-ico.html);background-repeat:no-repeat;}
+.box-modal#authorize .auth-input.text .note-wrapper .second-wrapper{position:absolute;bottom:37px;right:-173px;display:none;}
+.box-modal#authorize .auth-input.text .note-wrapper .second-wrapper .note{position:relative;width:270px;padding:10px 20px;font-size:12px;line-height:15px;background:#FFF5E0;border-top:10px solid #FFEFCC;}
+.box-modal#authorize .auth-input.text .note-wrapper .second-wrapper .note:after{content:"";position:absolute;width:31px;height:15px;bottom:-15px;left:50%;margin-left:-16px;background-image:url(assets/images/note-after.html);background-repeat:no-repeat;}
+
+.box-modal#authorize .auth-input.text input{width:300px;}
+.box-modal#authorize .auth-input.radio{margin-top:17px;margin-bottom:0;margin-left:27px;}
+.box-modal#authorize .auth-forgot{text-align:right;margin-right:83px;}
+.box-modal#authorize  .button-wrapper{margin-top:14px;}
+.box-modal#authorize  .button-wrapper.register{display:none;}
+
+.box-modal .auth-error{/*display:none;*/padding:10px 20px;font-size:12px;color:#FFFFFF;background:#BE1622;}
+.box-modal .auth-error span{font-weight:bold;color:#FFED00;}
+.box-modal .errortext{display:none;margin-top:8px;font-size:12px;color:#BE1622;}
+
+.box-modal#authorize,
+.box-modal#authorize .auth-input.text .note-wrapper .second-wrapper{-webkit-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.2);
+-moz-box-shadow:    0px 0px 15px 0px rgba(0, 0, 0, 0.2);
+box-shadow:         0px 0px 15px 0px rgba(0, 0, 0, 0.2);
+background: rgb(255, 255, 255);
+background: -moz-linear-gradient(135deg, rgb(255, 255, 255) 75%, rgb(246, 246, 246) 100%);
+background: -webkit-linear-gradient(135deg, rgb(255, 255, 255) 75%, rgb(246, 246, 246) 100%);
+background: -o-linear-gradient(135deg, rgb(255, 255, 255) 75%, rgb(246, 246, 246) 100%);
+background: -ms-linear-gradient(135deg, rgb(255, 255, 255) 75%, rgb(246, 246, 246) 100%);
+background: linear-gradient(225deg, rgb(255, 255, 255) 75%, rgb(246, 246, 246) 100%);}
+
+.zbpaf{text-align: center;}
+.zbpaf a:first-child{
+    margin-right: 20px;        
+}
+.zbpaf a{font-weight: 300;}
